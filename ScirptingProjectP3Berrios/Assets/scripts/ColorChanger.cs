@@ -8,6 +8,7 @@ public class ColorChanger : MonoBehaviour
     void Start()
     {
         
+       
     }
 
     // Update is called once per frame
@@ -15,7 +16,17 @@ public class ColorChanger : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.R))
         {
-            GetComponent<>
+            {
+                GetComponent<Renderer>().material.color = Color.red;
+            }
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                GetComponent<Renderer>().material.color = Color.green;
+            }
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                GetComponent<Renderer>().material.color = Color.blue;
+            }
         }
 
     }
